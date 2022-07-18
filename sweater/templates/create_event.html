@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+create new event
+{%endblock%}
+
+{% block body %}
+<div class="container">
+    <h1>Создайте новое событие!</h1>
+
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Название события">
+        <textarea name="about" id="about" class="form-control" placeholder="Введите описание события"></textarea>
+        <input type="date" name="date" id="date" placeholder="дата события" class="form-control">
+        <input type="submit" class="btn btn-success" value="Создать">
+    </form>
+</div>
+{%endblock%}

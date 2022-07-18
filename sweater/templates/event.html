@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{event.about}}
+{%endblock%}
+
+{% block body %}
+<div class="container">
+    <h1>Подробная информация</h1>
+    <div class="alert alert-info">
+        <h3>{{event.name}}</h3>
+        <h4>{{event.about}}</h4>
+        <h4>Дата события: {{event.the_date.date()}}</h4>
+        <a class="btn btn-danger" href="/event_delete/{{event.id}}">Удалить</a>
+        <a class="btn btn-success" href="/event_update/{{event.id}}">Изменить</a>
+    </div>
+</div>
+{%endblock%}

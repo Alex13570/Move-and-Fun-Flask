@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    horiz-align: center;
+    min-width: 240%;
+}
+
+.filling{
+    justify-content: center;
+    align-items: center;
+    horiz-align: center;
+    padding-top: 15%;
+    min-height: calc(100vh - 80px);
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    horiz-align: center;
+}
+
+.men {
+
+}
+
+.content {
+
+}
+
+.footer {
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+change event
+{%endblock%}
+
+{% block body %}
+<div class="container">
+    <h1>Изменить событие</h1>
+
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control"  placeholder="Название события" value="{{event.name}}">
+        <textarea name="about" id="about" class="form-control" placeholder="Введите описание события">{{event.about}}</textarea>
+        <input type="date" name="date" id="date" placeholder="дата события" class="form-control" value="{{event.the_date.date()}}">
+        <input type="submit" class="btn btn-success" value="Обновить">
+    </form>
+</div>
+{%endblock%}

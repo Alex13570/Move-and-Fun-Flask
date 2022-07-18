@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Events are available
+{%endblock%}
+
+{% block body %}
+<div class="container">
+    <h1>Доступные события</h1>
+    {% for ev in events %}
+    <div class="alert alert-info">
+        <h3>{{ev.name}}</h3>
+        <h4>{{ev.about}}</h4>
+        <h4>Дата события: {{ev.the_date.date()}}</h4>
+        <a class="btn btn-warning" href="/event/{{ ev.id }}">More info</a>
+    </div>
+    {% endfor %}
+</div>
+{%endblock%}
